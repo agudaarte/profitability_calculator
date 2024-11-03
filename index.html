@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+	atOptions = {
+		'key' : '9c2a1fd74cd08dc77ca939ad41abcac4',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/9c2a1fd74cd08dc77ca939ad41abcac4/invoke.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9770452477381874"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asset Calculator to discover the total return and profitability of your investment portfolio. Simple and quick.">
+    <meta name="keywords" content="Investment Calculator, Portfolio Management, Investment Profitability, Financial Planning, Asset Calculation, DY, Total Return, Wealth Management">
+    <meta name="author" content="Your Name or Company">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Asset Calculator - Portfolio Profitability">
+    <meta property="og:description" content="Discover the total return of your portfolio easily and quickly with the Asset Calculator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-site.com">
+    <meta property="og:image" content="URL_of_preview_image.png">
+    <title>Asset Calculator - Discover Your Portfolio's Profitability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0038A8; /* Dark blue */
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #fff; /* White */
+        }
+        form {
+            background-color: #f0f8ff; /* White */
+            color: #333; /* Dark text */
+            border-radius: 8px;
+            padding: 20px;
+            display: inline-block; /* Keeps the form centered */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #fff; /* White */
+            color: #333; /* Dark text */
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #e0e0e0; /* Light hover effect */
+        }
+        .results {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: inline-block; /* Centers the results */
+            color: #000; /* Results text in black */
+            text-align: center; /* Centers the results text */
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #fff; /* Footer text in white */
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7b0WyRfxz2a4N2d+Zoj/xr41R3D37iSOz1Kq6H+Kbbd7YO5uVxDBY3Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script type='text/javascript' src='//pl24835989.profitablecpmrate.com/91/67/84/916784f3ad06d64a572344989a9b768f.js'></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Asset Calculator",
+  "url": "https://your-site.com",
+  "description": "An easy-to-use tool for calculating investment profitability and asset management.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "All",
+  "author": {
+    "@type": "Organization",
+    "name": "Your Name or Company"
+  }
+}
+</script>
+</head>
+<body>
+    <h1>Asset Calculator</h1>
+    <h2>Discover the total return of your portfolio more easily</h2>
+
+    <form id="form">
+        <label for="assetName">Asset Name:</label><br>
+        <input type="text" id="assetName" required><br><br>
+        
+        <label for="capital">Invested Capital ($):</label><br>
+        <input type="text" id="capital" required><br><br>
+        
+        <label for="dy">DY (%):</label><br>
+        <input type="text" id="dy" required><br><br>
+        
+        <label for="profitability">Profitability (%):</label><br>
+        <input type="text" id="profitability" required><br><br>
+        
+        <button type="submit" aria-label="Add Asset">Add Asset</button>
+        <button type="button" id="calculate">Calculate Results</button>
+    </form>
+
+    <div class="results" id="resultDiv" style="display:none;"></div>
+    <button id="downloadResults" style="display:none;">Download Results</button>
+
+    <script>
+        const assets = [];
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const assetName = document.getElementById('assetName').value;
+            const capital = parseNumber(document.getElementById('capital').value);
+            const dy = parseNumber(document.getElementById('dy').value);
+            const profitability = parseNumber(document.getElementById('profitability').value);
+
+            if (isNaN(capital) || isNaN(profitability) || isNaN(dy)) {
+                alert('Please enter valid values.');
+                return;
+            }
+
+            assets.push({ name: assetName, capital, dy, profitability });
+
+            alert('Asset added successfully!');
+
+            // Clears the form
+            this.reset();
+        });
+
+        document.getElementById('calculate').addEventListener('click', function() {
+            calculateResults();
+        });
+
+        function parseNumber(value) {
+            // Replaces commas with dots and removes non-decimal points
+            return parseFloat(value.replace(/\./g, '').replace(',', '.'));
+        }
+
+        function calculateResults() {
+            let totalInvested = 0;
+            let sumDy = 0;
+            let sumProfitability = 0;
+
+            assets.forEach(asset => {
+                totalInvested += asset.capital;
+                sumDy += (asset.capital * asset.dy) / 100;
+                sumProfitability += (asset.capital * asset.profitability) / 100;
+            });
+
+            const weightedAverageDy = (sumDy / totalInvested) * 100; // Convert to percentage
+            const weightedAverageProfitability = (sumProfitability / totalInvested) * 100; // Convert to percentage
+            const totalFinal = totalInvested + sumDy + sumProfitability;
+            const utilization = ((totalFinal - totalInvested) / totalInvested) * 100;
+
+            // Creates text with the assets in table format for display
+            let assetTable = `
+            <table>
+                <tr>
+                    <th>Asset Name</th>
+                    <th>Invested Capital ($)</th>
+                    <th>DY (%)</th>
+                    <th>Profitability (%)</th>
+                    <th>Actions</th>
+                </tr>`;
+            assets.forEach((asset, index) => {
+                assetTable += `
+                <tr>
+                    <td>${asset.name}</td>
+                    <td>$ ${asset.capital.toFixed(2).replace('.', ',')}</td>
+                    <td>${asset.dy.toFixed(2).replace('.', ',')}%</td>
+                    <td>${asset.profitability.toFixed(2).replace('.', ',')}%</td>
+                    <td><button onclick="removeAsset(${index})" aria-label="Remove asset">🗑️</button></td>
+                </tr>`;
+            });
+            assetTable += `</table>`;
+
+            // Final Results
+            let resultsText = `
+            <div>
+            <strong>Total Utilization Results:</strong><br>
+            Total Invested: $ ${totalInvested.toFixed(2).replace('.', ',')} <br>
+            Weighted Average DY: ${weightedAverageDy.toFixed(2).replace('.', ',')}% <br>
+            Weighted Average Profitability: ${weightedAverageProfitability.toFixed(2).replace('.', ',')}% <br>
+            Final Total (Capital + DY + Profitability): $ ${totalFinal.toFixed(2).replace('.', ',')} <br>
+            Total Utilization: ${utilization.toFixed(2).replace('.', ',')}% <br>
+            </div>`;
+
+            // Updates display
+            document.getElementById('resultDiv').innerHTML = assetTable + '<br>' + resultsText;
+            document.getElementById('resultDiv').style.display = 'block';
+            document.getElementById('downloadResults').style.display = 'block';
+        }
+
+        function removeAsset(index) {
+            assets.splice(index, 1);
+            alert('Asset removed successfully!');
+            calculateResults(); // Recalculate results after removal
+        }
+    </script>
+
+    <footer>
+       <p>&copy; 2024 Gabriel Alcantara. Copyright All Rights Reserved.</p>
+        <p>This site and its contents are the property of Gabriel Alcantara. No part of this site may be reproduced, distributed, or used without express permission.</p>
+        <p>Connect with me
+            <a href="https://www.linkedin.com/in/gabrielfaa/" target="_blank" style="color: #fff;">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a> on 
+            <a href="mailto:agudaarte@gmail.com?subject=Calculadora de Ativos" style="color: #fff;">
+                <i class="fas fa-envelope"></i> e-mail
+            </a>
+        </p>
+        
+    </footer>
+</body>
+</html>
